@@ -24,9 +24,9 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="br.com.codeforse.controleaula" />
-	<context:component-scan base-package="br.com.codeforse.controleaula.service" />
-	<context:component-scan base-package="br.com.codeforse.controleaula.dao" />
+	<context:component-scan base-package="br.com.controleaula.controller" />
+	<context:component-scan base-package="br.com.controleaula.service" />
+	<context:component-scan base-package="br.com.controleaula.dao" />
 	
 	<beans:bean id="dbDataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
 		<beans:property name="jndiName" value="java:comp/env/jdbc/controleaula_pool" />

@@ -1,4 +1,4 @@
-package br.com.codeforse.controleaula;
+package br.com.controleaula.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,7 +15,7 @@ public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public ModelAndView home() {
 		logger.info("home()...");
-		ModelAndView mv = new ModelAndView("home");
+		ModelAndView mv = new ModelAndView("base-view");
 		return mv;
 	}
 	

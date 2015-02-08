@@ -6,7 +6,7 @@
 	<persistence-unit name="ControleAulaJPA">
 		<description>ControleAulaJPA</description>
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
-		<!-- <class>br.com.codeforse.model.Servico</class> -->
+		<class>br.com.controleaula.model.Usuario</class>
 
 		<properties>
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />

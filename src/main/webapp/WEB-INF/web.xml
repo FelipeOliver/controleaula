@@ -10,6 +10,11 @@
 		<param-value>0.1 - 20150206</param-value>
 	</context-param>
 
+	<welcome-file-list>
+		<welcome-file>base-view.jsp</welcome-file>
+	</welcome-file-list>
+
+
 	<!-- The definition of the Root Spring Container shared by all Servlets and Filters -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>

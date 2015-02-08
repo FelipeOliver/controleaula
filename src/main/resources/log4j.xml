@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="br.com.codeforse">
+	<logger name="br.com.controleaula">
 		<level value="info" />
 	</logger>
 	
