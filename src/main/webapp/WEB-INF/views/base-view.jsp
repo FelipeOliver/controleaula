@@ -50,11 +50,11 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="${pageContext.request.contextPath}/"><span data-icon="&#xf015;" aria-hidden="true"></span> Home</a></li>
-            <li><a href="#"><span data-icon="&#xf0ad;" aria-hidden="true"></span> Configurações</a></li>
-            <li><a href="#"><span data-icon="&#xf007;" aria-hidden="true"></span> Perfil</a></li>
-            <li><a href="#"><span data-icon="&#xf05a;" aria-hidden="true"></span> Sobre</a></li>
-            <li><a href="#"><span data-icon="&#xe040;" aria-hidden="true"></span> Ajuda</a></li>
+            <li><a href="${pageContext.request.contextPath}/" title="Home...">&nbsp;<span data-icon="&#xf015;" aria-hidden="true"></span>&nbsp;</a></li>
+            <li><a href="#" title="Configurações...">&nbsp;<span data-icon="&#xf0ad;" aria-hidden="true"></span>&nbsp;</a></li>
+            <li><a href="#" title="Perfil">&nbsp;<span data-icon="&#xf007;" aria-hidden="true"></span>&nbsp;</a></li>
+            <li><a href="#" title="Sobre...">&nbsp;<span data-icon="&#xf05a;" aria-hidden="true"></span>&nbsp;</a></li>
+            <li><a href="#" title="Auda...">&nbsp;<span data-icon="&#xe040;" aria-hidden="true"></span>&nbsp;</a></li>
           </ul>
         </div>
       </div>
@@ -68,7 +68,7 @@
             <li><a href="${pageContext.request.contextPath}/curso/list/"><span data-icon="&#xe025;" aria-hidden="true"></span> Cursos</a></li>
             <li><a href="${pageContext.request.contextPath}/professor/list/"><span data-icon="&#xe07a;" aria-hidden="true"></span> Professores</a></li>
             <li><a href="${pageContext.request.contextPath}/aluno/list/"><span data-icon="&#xe075;" aria-hidden="true"></span> Alunos</a></li>
-            <li><a href="#"><span data-icon="&#xf0c0;" aria-hidden="true"></span> Usuários</a></li>
+            <li><a href="${pageContext.request.contextPath}/usuario/list"><span data-icon="&#xf0c0;" aria-hidden="true"></span> Usuários</a></li>
           </ul>
           <hr/>
           <ul class="nav nav-sidebar">
@@ -86,14 +86,29 @@
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
         
          <section id="content_page">
-          	<div style="width:100%; height:470px; overflow: auto;" class="table-responsive">
-<%-- 	          	<c:if test="${contentpage != ''}"> --%>
-<%-- 	            	<c:import url="${contentpage}"></c:import> --%>
-<%-- 	            </c:if> --%>
+          	<div style="width:100%; height:500px; overflow: auto;" class="table-responsive">
+          	
+          		<c:if test="${content_data != null && content_data != ''}">
+				<div class="panel panel-default">
+				  	<div class="panel-heading">
+				  			<span data-icon="&#xe075;" aria-hidden="true"></span>&nbsp; 
+							${content_title}&nbsp;
+				  			
+				  			<c:if test="${list != null}">
+								<a href="${pageContext.request.contextPath}${request_mapping_add}" class="btn btn-sm btn-default pull-right" title="Cadastrar um novo ${model_name}...">							
+									&nbsp;&nbsp;<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp;&nbsp;
+								</a>
+							</c:if>				  		
+				  	</div>
+				  	<div class="panel-body" style="width:100%; height:430px; overflow: auto;" class="table-responsive">
+			            	<c:import url="${content_data}"></c:import>
+				  	</div>
+				</div>          	
+	            </c:if>
+          	
 	        </div>            
 	      
 	        <section class="text-center" id="footer">
-		      <hr/>
 	          2015 <span class="glyphicon glyphicon-copyright-mark"></span>  Fabiano Góes by Codeforse.  |  versão: 0.1
 	        </section>	      
 	        
