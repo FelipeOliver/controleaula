@@ -8,8 +8,6 @@ tudo referente ao *micro Framework* está dentro do *Package*: **br.com.controle
 * BaseService
 * BaseController
 
-****************
-
 ### O fluxo de desenvolvimento para um CRUD segue assim:
 ********************************************************
 
