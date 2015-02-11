@@ -20,19 +20,18 @@ O fluxo de desenvolvimento para um CRUD segue assim:
 
 > Por convenção o Controller ira sempre redirecionar para uma View com o mesmo nome da Model com a escrita toda em Lower Case
 
-### Exemplo da classe UsuarioDAO   
+**Exemplo da classe UsuarioDAO:**   
 [UsuarioDAO.java](https://gist.github.com/57a0da2a4c13eeca2866.git)
 
-### Exemplo da classe Service   
+**Exemplo da classe Service:**    
 [UsuarioService.java](https://gist.github.com/03f4860ad4e44066890c.git)
 
-### Exemplo da Classe Controller   
+**Exemplo da Classe Controller:**   
 [UsuarioController.java](https://gist.github.com/8a1896224f879914e725.git)
-
 
 > Perceba que as classes DAO e Service não possui nenhuma implementação, apenas com as heranças a implementação do CRUD baseado na classe Model já será automaticamente criado pelo "micro framework", apenas a classe Controller deve receber uma pequena implementação, criando um Construtor que passe por set() qual a classe Model.
 
-### exemplo da View   
+**Exemplo da View Usuario:**      
 [usuario.jsp](https://gist.github.com/546cca80763b8404484d.git)
 
 > Na view deve existir uma regra que quando no contexto a variavel "list" estiver nula significa que deve ser exibido apenas o Formulário de cadastro, e quando a varivael "list" não estiver nula significa que deve ser exibido a Table/GRID.
