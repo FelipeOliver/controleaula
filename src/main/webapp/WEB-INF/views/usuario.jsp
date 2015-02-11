@@ -27,8 +27,10 @@
 				</div> 		            
 	        </div>
 			<br/>
-			<a href="${pageContext.request.contextPath}/usuario/list" class="btn btn-default">&nbsp;<span data-icon="&#xf00d;" aria-hidden="true"></span>&nbsp;</a>
-			<button type="submit" class="btn btn-info pull-right">&nbsp;<span data-icon="&#xf0c7;" aria-hidden="true"></span>&nbsp;</button>
+			<a href="${pageContext.request.contextPath}/usuario/list" class="btn btn-default" 
+				data-toggle="tooltip" data-placement="bottom" title="Cancelar Cadastro...">&nbsp;<span data-icon="&#xf00d;" aria-hidden="true"></span>&nbsp;</a>
+			<button type="submit" class="btn btn-info pull-right" 
+				data-toggle="tooltip" data-placement="bottom" title="Salvar novo Cadastro...">&nbsp;<span data-icon="&#xf0c7;" aria-hidden="true"></span>&nbsp;</button>
 	    </form>
 			    
 	    
@@ -55,10 +57,12 @@
 					            <td>${model.login}</td>
 						        <td>${model.senha}</td>
 					            <td class="text-center">
-					            	<a href="${pageContext.request.contextPath}/usuario/add">
+					            	<a href="${pageContext.request.contextPath}/usuario/edit/${model.id}"
+					            		data-toggle="tooltip" data-placement="left" title="Editar Registro...">
 					            		<span class="text-info" data-icon="&#xf044;" aria-hidden="true" title="Editar Registro"></span>
 					            	</a> 
-					            	<a href="${pageContext.request.contextPath}/usuario/delete/${model.id}/">
+					            	<a href="${pageContext.request.contextPath}/usuario/delete/${model.id}"
+					            		data-toggle="tooltip" data-placement="bottom" title="Deletar Registro...">
 					            		<span class="text-danger" data-icon="&#xf014;" aria-hidden="true" title="Deletar Registro"></span>
 					            	</a>
 					            </td>

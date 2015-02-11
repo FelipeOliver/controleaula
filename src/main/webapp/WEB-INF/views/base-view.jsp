@@ -50,11 +50,11 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="${pageContext.request.contextPath}/" title="Home...">&nbsp;<span data-icon="&#xf015;" aria-hidden="true"></span>&nbsp;</a></li>
-            <li><a href="#" title="Configurações...">&nbsp;<span data-icon="&#xf0ad;" aria-hidden="true"></span>&nbsp;</a></li>
-            <li><a href="#" title="Perfil">&nbsp;<span data-icon="&#xf007;" aria-hidden="true"></span>&nbsp;</a></li>
-            <li><a href="#" title="Sobre...">&nbsp;<span data-icon="&#xf05a;" aria-hidden="true"></span>&nbsp;</a></li>
-            <li><a href="#" title="Auda...">&nbsp;<span data-icon="&#xe040;" aria-hidden="true"></span>&nbsp;</a></li>
+            <li><a href="${pageContext.request.contextPath}/" data-toggle="tooltip" data-placement="left" title="Pagina Principal...">&nbsp;<span data-icon="&#xf015;" aria-hidden="true"></span>&nbsp;</a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Configurações do Sistema...">&nbsp;<span data-icon="&#xf0ad;" aria-hidden="true"></span>&nbsp;</a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Pefil do Usuário...">&nbsp;<span data-icon="&#xf007;" aria-hidden="true"></span>&nbsp;</a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Sobre o Sistema...">&nbsp;<span data-icon="&#xf05a;" aria-hidden="true"></span>&nbsp;</a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Ajuda sobre o sistema...">&nbsp;<span data-icon="&#xe040;" aria-hidden="true"></span>&nbsp;</a></li>
           </ul>
         </div>
       </div>
@@ -64,17 +64,17 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li><a href="${pageContext.request.contextPath}/aula/list/"><span data-icon="&#xe03c;" aria-hidden="true"></span> Aulas</a></li>
-            <li><a href="${pageContext.request.contextPath}/curso/list/"><span data-icon="&#xe025;" aria-hidden="true"></span> Cursos</a></li>
-            <li><a href="${pageContext.request.contextPath}/professor/list/"><span data-icon="&#xe07a;" aria-hidden="true"></span> Professores</a></li>
-            <li><a href="${pageContext.request.contextPath}/aluno/list/"><span data-icon="&#xe075;" aria-hidden="true"></span> Alunos</a></li>
-            <li><a href="${pageContext.request.contextPath}/usuario/list"><span data-icon="&#xf0c0;" aria-hidden="true"></span> Usuários</a></li>
+            <li><a href="${pageContext.request.contextPath}/aula/list/" data-toggle="tooltip" data-placement="bottom" title="Cadastro de Aulas..."><span data-icon="&#xe03c;" aria-hidden="true" ></span> Aulas</a></li>
+            <li><a href="${pageContext.request.contextPath}/curso/list/" data-toggle="tooltip" data-placement="bottom" title="Cadastro de Cursos..."><span data-icon="&#xe025;" aria-hidden="true"></span> Cursos</a></li>
+            <li><a href="${pageContext.request.contextPath}/professor/list/" data-toggle="tooltip" data-placement="bottom" title="Cadastro de Professores..."><span data-icon="&#xe07a;" aria-hidden="true"></span> Professores</a></li>
+            <li><a href="${pageContext.request.contextPath}/aluno/list/"  data-toggle="tooltip" data-placement="bottom" title="Cadastro de Alunos..."><span data-icon="&#xe075;" aria-hidden="true"></span> Alunos</a></li>
+            <li><a href="${pageContext.request.contextPath}/usuario/list"  data-toggle="tooltip" data-placement="bottom" title="Cadastro de Usuários..."><span data-icon="&#xf0c0;" aria-hidden="true"></span> Usuários</a></li>
           </ul>
           <hr/>
           <ul class="nav nav-sidebar">
-            <li><a href=""><span data-icon="&#xf0ad;" aria-hidden="true"></span> Configurações</a></li>
-            <li><a href="#"><span data-icon="&#xf05a;" aria-hidden="true"></span> Sobre</a></li>
-            <li><a href=""><span data-icon="&#xe040;" aria-hidden="true"></span> Ajuda</a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Configurações do Sistema..."><span data-icon="&#xf0ad;" aria-hidden="true"></span> Configurações</a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Sobre o Sistema..."><span data-icon="&#xf05a;" aria-hidden="true"></span> Sobre</a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Ajuda sobre o Sistema..."><span data-icon="&#xe040;" aria-hidden="true"></span> Ajuda</a></li>
           </ul>
           <hr/>
           <div class="text-center">
@@ -91,11 +91,12 @@
           		<c:if test="${content_data != null && content_data != ''}">
 				<div class="panel panel-default">
 				  	<div class="panel-heading">
-				  			<span data-icon="&#xe075;" aria-hidden="true"></span>&nbsp; 
+				  			<span data-icon="&#xe03c;" aria-hidden="true"></span>&nbsp; 
 							${content_title}&nbsp;
 				  			
 				  			<c:if test="${list != null}">
-								<a href="${pageContext.request.contextPath}${request_mapping_add}" class="btn btn-sm btn-default pull-right" title="Cadastrar um novo ${model_name}...">							
+								<a href="${pageContext.request.contextPath}${request_mapping_add}" class="btn btn-sm btn-default pull-right" 
+									 data-toggle="tooltip" data-placement="bottom" title="Cadastrar um novo ${model_name}...">							
 									&nbsp;&nbsp;<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp;&nbsp;
 								</a>
 							</c:if>				  		
@@ -129,5 +130,10 @@
     <script src="${pageContext.request.contextPath}/static/js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="${pageContext.request.contextPath}/static/js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript">
+	    $(function () {
+	    	  $('[data-toggle="tooltip"]').tooltip()
+	    })
+    </script>
 </body>
 </html>
