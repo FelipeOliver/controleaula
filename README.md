@@ -35,4 +35,24 @@ tudo referente ao *micro Framework* está dentro do *Package*: **br.com.controle
 
 > Na view deve existir uma regra que quando no contexto a variavel "list" estiver nula significa que deve ser exibido apenas o Formulário de cadastro, e quando a varivael "list" não estiver nula significa que deve ser exibido a Table/GRID.
 
+Como Contribuir
+---------------
+
+* Faça um fork desse repositório, clicando no botão [![Fork][14]][15], na parte superior direita da pagina do Github
+* Clone seu fork:
+
+    ``git clone --recursive https://github.com/SEU_USUARIO_DO_GITHUB/pythonclub.github.io.git``
+
+* Após criar ou editar seu artigo faça um pull-request para que sua implementação entre em produção.
+
+Veja o video que explica o processo de fork, clone, push e pull-request : http://pythonclub.com.br/como-fazer-fork-clone-push-pull-request-no-github.html
+ 
+Sincronizando seu fork
+----------------------
+
+Caso você já tenha feito fork a algum tempo você tem duas opções para garantir que
+estará trabalhando com as ultimas alterações, que pode ser simplesmente deletar
+seu fork e fazer um novo ou sincronizar seu fork com o repositório de origem
+usando as [instruções contidas na wiki][https://gist.github.com/55ed9eed0664d2f90f9c.git]
+
 
