@@ -55,6 +55,6 @@ estará trabalhando com as ultimas alterações, que pode ser simplesmente delet
 seu fork e fazer um novo ou sincronizar seu fork com o repositório de origem
 usando as [instruções contidas na wiki](https://gist.github.com/55ed9eed0664d2f90f9c.git)
 
-[0]: https://gist.github.com/57a0da2a4c13eeca2866.git
+[0]: https://gist.github.com/fabianogoes/57a0da2a4c13eeca2866
 
 
