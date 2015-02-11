@@ -23,7 +23,7 @@ O fluxo de desenvolvimento para um CRUD segue assim:
 Arquivos de Exemplo
 -------------------
 
-**Exemplo da classe UsuarioDAO:** [UsuarioDAO.java](https://gist.github.com/57a0da2a4c13eeca2866.git)
+**Exemplo da classe UsuarioDAO:** [UsuarioDAO.java][0]
 
 **Exemplo da classe Service:** [UsuarioService.java](https://gist.github.com/03f4860ad4e44066890c.git)
 
@@ -55,6 +55,6 @@ estará trabalhando com as ultimas alterações, que pode ser simplesmente delet
 seu fork e fazer um novo ou sincronizar seu fork com o repositório de origem
 usando as [instruções contidas na wiki](https://gist.github.com/55ed9eed0664d2f90f9c.git)
 
-
+[0]: https://gist.github.com/57a0da2a4c13eeca2866.git
 
 
