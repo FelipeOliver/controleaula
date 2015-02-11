@@ -59,5 +59,5 @@ usando as [instruções contidas na wiki](https://gist.github.com/55ed9eed0664d2
 [1]: https://gist.github.com/fabianogoes/03f4860ad4e44066890c
 [2]: https://gist.github.com/fabianogoes/8a1896224f879914e725
 [3]: https://gist.github.com/fabianogoes/546cca80763b8404484d
-[4]: http://acrl.ala.org/techconnect/wp-content/uploads/2013/05/github-fork-btn.png
+[4]: https://github.com/fabianogoes/controleaula/blob/master/src/main/webapp/WEB-INF/static/img/github-fork-btn.png
 [5]: https://github.com/fabianogoes/controleaula/fork
