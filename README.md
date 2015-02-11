@@ -25,20 +25,20 @@ Arquivos de Exemplo
 
 **Exemplo da classe UsuarioDAO:** [UsuarioDAO.java][0]
 
-**Exemplo da classe Service:** [UsuarioService.java](https://gist.github.com/03f4860ad4e44066890c.git)
+**Exemplo da classe Service:** [UsuarioService.java][1]
 
-**Exemplo da Classe Controller:** [UsuarioController.java](https://gist.github.com/8a1896224f879914e725.git)
+**Exemplo da Classe Controller:** [UsuarioController.java][2]
 
 > Perceba que as classes DAO e Service não possui nenhuma implementação, apenas com as heranças a implementação do CRUD baseado na classe Model já será automaticamente criado pelo "micro framework", apenas a classe Controller deve receber uma pequena implementação, criando um Construtor que passe por set() qual a classe Model.
 
-**Exemplo da View Usuario:** [usuario.jsp](https://gist.github.com/546cca80763b8404484d.git)
+**Exemplo da View Usuario:** [usuario.jsp][3]
 
 > Na view deve existir uma regra que quando no contexto a variavel "list" estiver nula significa que deve ser exibido apenas o Formulário de cadastro, e quando a varivael "list" não estiver nula significa que deve ser exibido a Table/GRID.
 
 Como Contribuir
 ---------------
 
-* Faça um fork desse repositório, clicando no botão [![Fork][14]][15], na parte superior direita da pagina do Github
+* Faça um fork desse repositório, clicando no botão [![Fork][4]][5], na parte superior direita da pagina do Github
 * Clone seu fork:
 
     ``git clone --recursive https://github.com/SEU_USUARIO_DO_GITHUB/pythonclub.github.io.git``
@@ -56,5 +56,8 @@ seu fork e fazer um novo ou sincronizar seu fork com o repositório de origem
 usando as [instruções contidas na wiki](https://gist.github.com/55ed9eed0664d2f90f9c.git)
 
 [0]: https://gist.github.com/fabianogoes/57a0da2a4c13eeca2866
-
-
+[1]: https://gist.github.com/fabianogoes/03f4860ad4e44066890c
+[2]: https://gist.github.com/fabianogoes/8a1896224f879914e725
+[3]: https://gist.github.com/fabianogoes/546cca80763b8404484d
+[4]: https://www.robertkehoe.com/wp-content/uploads/2012/11/ForkOnGithub.png
+[5]: https://github.com/fabianogoes/controleaula/fork
