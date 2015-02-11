@@ -5,6 +5,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import br.com.controleaula.framework.BaseModel;
+
 @Entity
 @Table(name = "Usuarios")
 public class Usuario extends BaseModel {

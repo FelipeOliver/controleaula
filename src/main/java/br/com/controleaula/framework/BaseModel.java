@@ -1,4 +1,4 @@
-package br.com.controleaula.model;
+package br.com.controleaula.framework;
 
 import java.io.Serializable;
 

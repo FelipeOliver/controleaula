@@ -1,4 +1,4 @@
-package br.com.controleaula.service;
+package br.com.controleaula.framework;
 
 import java.util.List;
 
@@ -6,9 +6,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import br.com.controleaula.dao.BaseDAO;
-import br.com.controleaula.model.BaseModel;
 
 @Service
 public abstract class BaseService<T> {

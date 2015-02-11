@@ -1,4 +1,4 @@
-package br.com.controleaula.dao;
+package br.com.controleaula.framework;
 
 import java.util.List;
 

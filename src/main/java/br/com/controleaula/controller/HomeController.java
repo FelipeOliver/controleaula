@@ -17,7 +17,7 @@ public class HomeController {
 		logger.info("home()...");
 		ModelAndView mv = new ModelAndView("base-view");
 		mv.addObject("content_data", "Content Data");
-		mv.addObject("content_title", "Aulas");
+		mv.addObject("content_title", "Controle Aulas");
 		return mv;
 	}
 	
