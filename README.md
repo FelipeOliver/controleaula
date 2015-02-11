@@ -65,3 +65,4 @@ Licensed under an [MIT-style permissive license][6].
 [3]: https://gist.github.com/fabianogoes/546cca80763b8404484d
 [4]: https://github.com/fabianogoes/controleaula/blob/master/src/main/webapp/WEB-INF/static/img/github-fork-btn.png
 [5]: https://github.com/fabianogoes/controleaula/fork
+[6]: https://github.com/fabianogoes/controleaula/blob/master/LICENSE
