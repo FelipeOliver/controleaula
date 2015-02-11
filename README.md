@@ -8,8 +8,8 @@ tudo referente ao *micro Framework* está dentro do *Package*: **br.com.controle
 * BaseService
 * BaseController
 
-### O fluxo de desenvolvimento para um CRUD segue assim:
-********************************************************
+O fluxo de desenvolvimento para um CRUD segue assim:
+----------------------------------------------------
 
 1. Criar uma classe Model herança de BaseModel, exemplo **Usuario**
 2. Criar uma classe DAO herança de **BaseDAO**, exemplo **UsuarioDAO** e apenas anotar como: **@Repository("UsuarioDAO")**
@@ -20,8 +20,8 @@ tudo referente ao *micro Framework* está dentro do *Package*: **br.com.controle
 > Por convenção o Controller ira sempre redirecionar para uma View com o mesmo nome da Model com a escrita toda em Lower Case
 
 
-### Arquivos de Exemplo
-***********************
+Arquivos de Exemplo
+-------------------
 
 **Exemplo da classe UsuarioDAO:** [UsuarioDAO.java](https://gist.github.com/57a0da2a4c13eeca2866.git)
 
@@ -53,6 +53,8 @@ Sincronizando seu fork
 Caso você já tenha feito fork a algum tempo você tem duas opções para garantir que
 estará trabalhando com as ultimas alterações, que pode ser simplesmente deletar
 seu fork e fazer um novo ou sincronizar seu fork com o repositório de origem
-usando as [instruções contidas na wiki][https://gist.github.com/55ed9eed0664d2f90f9c.git]
+usando as [instruções contidas na wiki](https://gist.github.com/55ed9eed0664d2f90f9c.git)
+
+
 
 
