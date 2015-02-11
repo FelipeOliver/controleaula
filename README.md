@@ -1,6 +1,4 @@
-# controleaula
-
-### Sistema para Controle de Aulas
+# Sistema para Controle de Aulas
 
 Para facilitar o desenvolvimento de **CRUD**, foi criado dentro do próprio sistema um *micro Framework*,   
 tudo referente ao *micro Framework* está dentro do *Package*: **br.com.controleaula.framework**:
@@ -10,7 +8,10 @@ tudo referente ao *micro Framework* está dentro do *Package*: **br.com.controle
 * BaseService
 * BaseController
 
-O fluxo de desenvolvimento para um CRUD segue assim:
+****************
+
+### O fluxo de desenvolvimento para um CRUD segue assim:
+********************************************************
 
 1. Criar uma classe Model herança de BaseModel, exemplo **Usuario**
 2. Criar uma classe DAO herança de **BaseDAO**, exemplo **UsuarioDAO** e apenas anotar como: **@Repository("UsuarioDAO")**
@@ -19,6 +20,10 @@ O fluxo de desenvolvimento para um CRUD segue assim:
 4. Criar uma View com o mesm nome da Model como lower case exemplo **usuario.jsp**
 
 > Por convenção o Controller ira sempre redirecionar para uma View com o mesmo nome da Model com a escrita toda em Lower Case
+
+
+### Arquivos de Exemplo
+***********************
 
 **Exemplo da classe UsuarioDAO:** [UsuarioDAO.java](https://gist.github.com/57a0da2a4c13eeca2866.git)
 
