@@ -36,6 +36,8 @@ Arquivos de Exemplo
 
 > Na view deve existir uma regra que quando no contexto a variavel "list" estiver nula significa que deve ser exibido apenas o Formulário de cadastro, e quando a varivael "list" não estiver nula significa que deve ser exibido a Table/GRID.
 
+[>>> Ver DER do Sistema][7]
+
 Como Contribuir
 ---------------
 
@@ -67,3 +69,4 @@ Licensed under an [MIT-style permissive license][6].
 [4]: https://github.com/fabianogoes/controleaula/blob/master/src/main/webapp/WEB-INF/static/img/github-fork-btn.png
 [5]: https://github.com/fabianogoes/controleaula/fork
 [6]: https://github.com/fabianogoes/controleaula/blob/master/LICENSE
+[7]: https://www.dropbox.com/s/phwz44vm9tao1ig/der-controleaula.pdf
