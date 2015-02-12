@@ -7,6 +7,7 @@ tudo referente ao *micro Framework* está dentro do *Package*: **br.com.controle
 * BaseDAO
 * BaseService
 * BaseController
+* GenerateView
 
 O fluxo de desenvolvimento para um CRUD segue assim:
 ----------------------------------------------------
