@@ -58,8 +58,6 @@ estará trabalhando com as ultimas alterações, que pode ser simplesmente delet
 seu fork e fazer um novo ou sincronizar seu fork com o repositório de origem
 usando as [instruções contidas na wiki](https://gist.github.com/55ed9eed0664d2f90f9c.git)
 
-> testando fork / pull request
-
 License
 -------
 Licensed under an [MIT-style permissive license][6].
