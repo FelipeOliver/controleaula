@@ -44,7 +44,7 @@ Como Contribuir
 * Faça um fork desse repositório, clicando no botão [![Fork][4]][5], na parte superior direita da pagina do Github
 * Clone seu fork:
 
-    ``git clone --recursive https://github.com/SEU_USUARIO_DO_GITHUB/pythonclub.github.io.git``
+    ``git clone --recursive https://github.com/SEU_USUARIO_DO_GITHUB/controleaula.git``
 
 * Após criar ou editar seu artigo faça um pull-request para que sua implementação entre em produção.
 
