@@ -34,7 +34,7 @@ public class GenerateView {
 		String tableHead = generateView.getTableHead(className);
 		String tableColumns = generateView.getTableColumns(className);
 		
-		String template = generateView.getTemplateModelView();
+		String template = generateView.getTemplateModelView(className);
 		template = template.replace("$form_inputs$", formInputs);
 		template = template.replace("$table_head$", tableHead);
 		template = template.replace("$table_columns$", tableColumns);
@@ -79,14 +79,14 @@ public class GenerateView {
 				
 				// monto o componente
 				sbInputs.append( "<div class=\"row\">\n" );
-				sbInputs.append( "\t<div class=\"col-xs-1\">\n" );
+				sbInputs.append( "\t<div class=\"col-xs-1\"></div>\n" );
 				sbInputs.append( "\t<div class=\"col-xs-10\">\n" );
 				sbInputs.append( "\t\t<div class=\"form-group\">\n" );
 				sbInputs.append( "\t\t\t"+label+"\n" );
 				sbInputs.append( "\t\t\t"+input+"\n" );
 				sbInputs.append( "\t\t</div>\n" );
 				sbInputs.append( "\t</div>\n" );
-				sbInputs.append( "\t<div class=\"col-xs-1\">\n" );
+				sbInputs.append( "\t<div class=\"col-xs-1\"></div>\n" );
 				sbInputs.append( "</div>\n\n" );
 						
 			}
@@ -189,18 +189,18 @@ public class GenerateView {
 		return this.getClass().getPackage().getName(); 
 	}
 	
-	public String getTemplateModelView(){
+	public String getTemplateModelView(String className) throws ClassNotFoundException{
 		StringBuilder sb = new StringBuilder(); 
 		sb.append( "<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>\n" );
 		sb.append( "<%@ page language=\"java\" contentType=\"text/html; charset=UTF-8\" pageEncoding=\"UTF-8\"%>\n" );
 		
 		sb.append( "<c:if test=\"${list eq null}\">\n" );
-		sb.append( "	<section id=\"usuario-form\" class=\"well\">\n" );
-		sb.append( "		<form action=\"${pageContext.request.contextPath}/usuario/save\" method=\"post\" id=\"id_form_usuario\">\n" );
+		sb.append( String.format("	<section id=\"%s-form\" class=\"well\">\n", this.getClass(className).getSimpleName().toLowerCase()) );
+		sb.append( "		<form action=\"${pageContext.request.contextPath}/"+this.getClass(className).getSimpleName().toLowerCase()+"/save\" method=\"post\" id=\"id_form_"+this.getClass(className).getSimpleName().toLowerCase()+"\">\n" );
 		sb.append( "			<br>" );
 		sb.append( "			$form_inputs$" );
 		sb.append( "			<br/>" );
-		sb.append( "			<a href=\"${pageContext.request.contextPath}/usuario/list\" class=\"btn btn-default\"");
+		sb.append( "			<a href=\"${pageContext.request.contextPath}/"+this.getClass(className).getSimpleName().toLowerCase()+"/list\" class=\"btn btn-default\"");
 		sb.append( "				data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"Cancelar Cadastro...\">&nbsp;<span data-icon=\"&#xf00d;\" aria-hidden=\"true\"></span>&nbsp;</a>\n" );
 		sb.append( "			<button type=\"submit\" class=\"btn btn-info pull-right\"" );
 		sb.append( "				data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"Salvar novo Cadastro...\">&nbsp;<span data-icon=\"&#xf0c7;\" aria-hidden=\"true\"></span>&nbsp;</button>\n" );
@@ -209,7 +209,7 @@ public class GenerateView {
 		sb.append( "</c:if>");
 
 		sb.append( "<c:if test=\"${list != null}\">\n" );
-		sb.append( "	<section id=\"usuario-table\">\n" );
+		sb.append( String.format("	<section id=\"%s-table\">\n", this.getClass(className).getSimpleName().toLowerCase()) );
 		sb.append( "		<table class=\"table table-striped table-condensed table-hover table-bordered\">\n" );
 		sb.append( "		   	<thead>\n" );
 		sb.append( "		       	<tr>\n" );
