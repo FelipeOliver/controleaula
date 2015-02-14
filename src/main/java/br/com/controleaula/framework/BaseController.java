@@ -2,7 +2,6 @@ package br.com.controleaula.framework;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,8 +28,8 @@ public class BaseController<T> {
 		return mv;
 	}
 	
-	@Autowired
-	private BaseService<T> service;
+	//@Autowired
+	protected BaseService<T> service;
 	
 	
 	@RequestMapping(value = "/list", method = RequestMethod.GET)

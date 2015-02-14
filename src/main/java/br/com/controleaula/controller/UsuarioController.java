@@ -7,19 +7,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import br.com.controleaula.framework.BaseController;
 import br.com.controleaula.framework.BaseService;
-import br.com.controleaula.model.Pessoa;
+import br.com.controleaula.model.Usuario;
 
 @Controller
-@RequestMapping("/pessoa")
-public class PessoaController extends BaseController<Pessoa> {
+@RequestMapping("/usuario")
+public class UsuarioController extends BaseController<Usuario> {
 
-	public PessoaController(){
-		super.setClazz(Pessoa.class);
+	public UsuarioController(){
+		super.setClazz(Usuario.class);
 	}
 	
-	@Qualifier("pessoaService")
+	@Qualifier("usuarioService")
 	@Autowired
-	public void setService(BaseService<Pessoa> service){
+	public void setService(BaseService<Usuario> service){
 		super.service = service;
 	}
 	
