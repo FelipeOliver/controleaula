@@ -40,9 +40,9 @@ public class GenerateView {
 		template = template.replace("$table_columns$", tableColumns);
 		
 		String current = new java.io.File( "." ).getCanonicalPath();
-		String dirViews = current + "\\src\\main\\webapp\\WEB-INF\\views\\";
+		String dirViews = current + "/src/main/webapp/WEB-INF/views/";
                 
-        String fileViewName = dirViews+generateView.getClassSimpleName(className).toLowerCase()+"__.jsp";
+        String fileViewName = dirViews+generateView.getClassSimpleName(className).toLowerCase()+".jsp";
 		FileWriter fw = new FileWriter( fileViewName );
 		PrintWriter pw = new PrintWriter( fw );
 		pw.println( template );
