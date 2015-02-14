@@ -3,9 +3,9 @@ package br.com.controleaula.service;
 import org.springframework.stereotype.Service;
 
 import br.com.controleaula.framework.BaseService;
-import br.com.controleaula.model.Usuario;
+import br.com.controleaula.model.Pessoa;
 
-@Service("UsuarioService")
-public class UsuarioService extends BaseService<Usuario> {
+@Service("PessoaService")
+public class PessoaService extends BaseService<Pessoa> {
 
 }

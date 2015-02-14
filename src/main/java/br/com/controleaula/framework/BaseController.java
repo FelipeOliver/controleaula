@@ -32,6 +32,7 @@ public class BaseController<T> {
 	@Autowired
 	private BaseService<T> service;
 	
+	
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public ModelAndView list() {
 		logger.info("["+clazz.getName()+"]list()...");
